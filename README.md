@@ -1,5 +1,7 @@
 # better-than-yesterday
 
+인프런 [리액트 테스트 강좌](https://www.inflearn.com/course/%EB%94%B0%EB%9D%BC%ED%95%98%EB%8A%94-%EB%A6%AC%EC%95%A1%ED%8A%B8-%ED%85%8C%EC%8A%A4%ED%8A%B8)를 통해 학습 후 실제 프로젝트에 적용하는 것을 목표로 하는 저장소
+
 ### React Testing Library 주요 API
 
 React Testing Library는 유저입장에서 보는 행위 주도 테스트기반 방식
@@ -19,7 +21,7 @@ React Testing Library는 유저입장에서 보는 행위 주도 테스트기반
 - fireEvent
   - 유저가 발생시키는 액션(이벤트)에 대한 테스트를 해야하는 경우 사용
   - 하지만 사용자에 입장에서 더 좋은 상호작용을 제공하기 위해 [userEvent](https://testing-library.com/docs/ecosystem-user-event) 사용권장
-  - fireEvent 기반으로 작성됐으며, 엘리먼트의 타입에 따라서 클릭했을 때 타입에 따라 더욱 적절한 반응을 보여줌
+  - fireEvent 기반으로 작성됐으며, 엘리먼트의 타입에 따라서 클릭했을 때 타입에 따라 더욱 적절한 반응을 보임
 
 ### testing-library과 jest-dom
 
