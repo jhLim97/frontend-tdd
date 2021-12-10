@@ -30,6 +30,22 @@ React Testing Library는 유저입장에서 보는 행위 주도 테스트기반
 
 ### testing library의 Query 사용 우선 순위
 
-구성 요소, 페이지 등)와 상호 작용하는 사용자를 기준으로 많은 사람들의 접근성을 기준으로 우선순위 결정
+구성 요소, 페이지 등 상호 작용하는 사용자를 기준으로 많은 사람들의 접근성을 기준으로 우선순위 결정
 
 - [공식문서 권장 우선순위](https://testing-library.com/docs/queries/about/#priority)
+
+### Mock Service Worker
+
+백엔드에서 데이터를 가져오는 부분에 대한 테스트 방법
+
+1. 실제로 서버에 호출 - E2E
+2. 서버에 요청을 보낼 때 해당 요청을 가로채서 모의 응답 전송 - Mock Service Worker
+
+- 브라우저와 통합해서 사용하는 방법
+  - Service Worker를 브라우저에 등록
+  - 브라우저에서 request 감지 후 처리
+- 노드와 통합하는 방법 - Jest를 사용하는 경우에 적합
+  - 임의로 구축한 모의 서버에 요청 후 response 전달
+
+handler를 만들때는 msw 패키지를 사용해서 구축(Rest or Graphql 선택가능)
+등록된 핸들러에서 요청을 처리한 후 모의 응답을 브라우저로 전송
