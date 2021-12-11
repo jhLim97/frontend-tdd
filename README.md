@@ -1,4 +1,4 @@
-# better-than-yesterday
+# frontend-tdd
 
 인프런 [리액트 테스트 강좌](https://www.inflearn.com/course/%EB%94%B0%EB%9D%BC%ED%95%98%EB%8A%94-%EB%A6%AC%EC%95%A1%ED%8A%B8-%ED%85%8C%EC%8A%A4%ED%8A%B8)를 통해 학습 후 실제 프로젝트에 적용하는 것을 목표로 하는 저장소
 
@@ -48,4 +48,5 @@ React Testing Library는 유저입장에서 보는 행위 주도 테스트기반
   - 임의로 구축한 모의 서버에 요청 후 response 전달
 
 handler를 만들때는 msw 패키지를 사용해서 구축(Rest or Graphql 선택가능)
+
 등록된 핸들러에서 요청을 처리한 후 모의 응답을 브라우저로 전송
