@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 import Products from './Products';
 import Options from './Options';
 import ErrorBanner from '../../components/ErrorBanner';
-import OrderContext from '../../contexts/OrderContext';
+import { OrderContext } from '../../contexts/OrderContext';
 
 function Type({ orderType }) {
     const [items, setItems] = useState([]);
